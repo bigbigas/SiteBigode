@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Prestige</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header id="headerdt">
+        <h1>Barbearia Prestige</h1>
+        <ul>
+            <li><a href="#sectres">Equipe</a></li>
+            <li><a href="#secquatro">Serviços</a></li>
+            <li><a href="#secdoisdois">Localização</a></li>
+            <!-- <li><a href="#sectres">Comentários</a></li>
+            <li><a href="#prerodape">Junte-se</a></li> -->
+        </ul>
+        <button>Agendar</button>
+    </header>
+    <div class="menufixo">
+        <header id="headermb">
+            <img src="../imagens/menu-icon.jpg" alt="" onclick="abrirmenu()">
+            <div id="menumenu" class="menufora">
+                <ul>
+                    <li onclick="fecharmenu()"><a href="#secum">Equipe</a></li>
+                    <li onclick="fecharmenu()"><a href="#secdois">Serviços</a></li>
+                    <li onclick="fecharmenu()"><a href="#secdoisdois">Localização</a></li>
+                    <!-- <li onclick="fecharmenu()"><a href="#sectres">Comentários</a></li>
+                    <li onclick="fecharmenu()"><a href="#prerodape">Junte-se</a></li> -->
+                    <li onclick="fecharmenu()"><img src="../imagens/x.png" alt=""></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+
+
+    <div class="escuro"></div>
+
+
+    <main>
+        <section id="secum">
+            <div class="esquerdo">
+                <h1>Barbearia Prestige</h1>
+                <p>Nós somos a barbearia, gostariamos de fazer voce se sentir confortavel conosco e tals e e isso ai vei. sei oq falar masi nao mas porem. tenho que acabar essa merda aqui e e isso ai tlgd.</p>
+                <a href="#"><button>AGENDE SEU HORÁRIO</button></a>
+            </div>
+            <div class="direito">
+                <img src="../imagens/front-view-male-barber-holding-scissors-barbershop-removebg-preview 1.png" alt="">
+            </div>
+        </section>
+        <section class="secdois" id="secdois">
+            <div>
+                <h1>Sejam bem-vindos!</h1>
+                <p>Bom, iremos contar um pouco da nossa história durante a nossa trajetória na nossa barbearia. Nossa barbearia foi fundada em 13 de Abril de 2015, com apenas 2 integrantes nós fundamos a nossa primeira barbearia que durou até 2018. No ano seguinte nós fundamos outra barbearia com 3 integrantes, e estamos até os dias de hoje proporcionando o nosso melhor para nosso clientes.</p>
+            </div>
+            
+        </section>
+        <section class="sectres" id="sectres">
+            <div class="cima">
+                <div class="traco"></div>
+                <h1>Nossa equipe</h1>
+                <p>Nossa atual equipe é formada pelos tres integrantes: Paulo, Felipe e Rodrigo. Todos nós somos barbeiros com experiencia de mais de 5 anos, profissionais de alta qualidade que passa segurança ao cliente.</p>
+            </div>
+            <div class="baixo">
+                <div class="cards3">
+                    <img src="../imagens/tesoura 1.png" alt="">
+                    <p>Sastifação dos nossos clientes e a retorna dos mesmos.</p>
+                </div>
+                <div class="cards3">
+                    <img src="../imagens/baene 1.png" alt="">
+                    <p>Boa qualidade e melhor resultado sempre, iremos sempre dar o nosso melhor de acordo com o nosso cliente.</p>
+                </div>
+                <div class="cards3">
+                    <img src="../imagens/OIP 1.png" alt="">
+                    <p>Construir um laço entre cliente e barbeiro, assim formando um ambiente melhor.</p>
+                </div>
+            </div>
+        </section>
+        <section class="secquatro" id="secquatro">
+            <div class="cima"><h1>Serviços</h1></div>
+            <div class="imagens4">
+                <div class="imagens1">
+                    <div><img src="../imagens/barba 1.png" alt=""><h3>BARBA</h3></div>
+                    <div><img src="../imagens/img barbearia 1.png" alt=""><h3>CORTE Á MAQUINA</h3></div>
+                    <div><img src="../imagens/tesoura 2.png" alt=""><h3>CORTE Á TESOURA</h3></div>
+                </div>
+                <div class="imagens2">
+                    <div><img src="../imagens/freestyle 1.png" alt=""><h3>FREESTYLE</h3></div>
+                    <div><img src="../imagens/CLASSICO 1.png" alt=""><h3>CLÁSSICO</h3></div>
+                    <div><img src="../imagens/DOBRA 1.png" alt=""><h3>SOBRANCELHAS</h3></div>
+                </div>
+            </div>
+        </section>
+        <section class="seccinco" id="seccinco">
+            <div class="cima">
+                <div class="traco"></div>
+                <h1>Nossa localização</h1>
+                <p>Aqui nós informamos onde nossa barbearia se localiza para a fácil chegada de nosso clientes.</p>
+            </div>
+            <div class="baixo">
+                <img src="../imagens/Mapa MO Boa Vista Final 1.png" alt="">
+            </div>
+        </section>
+        <footer>
+            <div class="esquerdo">
+                <h1>Venha prestigiar os nossos serviços e lançar na régua máxima!</h1>
+            </div>
+            <div class="direito">
+                <button>Agendar</button>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        const botao = document.querySelector('header#headermb')
+        const menu = document.querySelector('div#menumenu')
+
+        function abrirmenu() {
+            menu.classList.remove('menufora')
+            menu.classList.add('menudentro')
+            console.log('penis 2')
+        }
+
+        function fecharmenu() {
+            menu.classList.remove('menudentro')
+            menu.classList.add('menufora')
+            console.log('penis')
+        }
+    </script>
+</body>
+</html>
